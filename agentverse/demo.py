@@ -216,7 +216,7 @@ class UI:
             stop_autoplay_btn.click(fn=self.stop_autoplay, inputs=None, outputs=None, show_progress=False)
             start_autoplay_btn.click(fn=self.start_autoplay, inputs=None, outputs=[image_output, text_output], show_progress=False)
 
-        demo.queue(concurrency_count=5, max_size=20).launch()
+        demo.queue(concurrency_count=5, max_size=20).launch(share=True)
         #demo.launch()
 
 

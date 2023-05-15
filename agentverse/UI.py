@@ -63,4 +63,4 @@ class UI:
                 fn=self.auto_play,
                 inputs=None, outputs=[image_output, text_output], show_progress=False)
             stop_auto_btn.click(fn=self.stop_auto, inputs=None, outputs=None, show_progress=False)
-        demo.queue(concurrency_count=5, max_size=20).launch()
+        demo.queue(concurrency_count=5, max_size=20).launch(share=True)
